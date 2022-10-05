@@ -5,9 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <div>
+      <header>
+        <h1>
+          <i class="fa-solid fa-lock-open"></i> (UN)SECURE PASSWORD GENERATOR
+        </h1>
+      </header>
+      <p>
+        <i class="fa-solid fa-user-pen"></i> Name: <span id="userName"></span>
+      </p>
+      <p>
+        <i class="fa-solid fa-user-pen"></i> Surname:
+        <span id="userSurname"></span>
+      </p>
+      <p>
+        <i class="fa-solid fa-palette"></i> Favourite Color:
+        <span id="userFavColor"></span>
+      </p>
+      <div>
+        <h2>
+          <i class="fa-solid fa-lock"></i> Generated Password:
+          <div>
+            <span id="generatedPassword"></span>
+            <span id="strength">Strength: extremely weak</span>
+          </div>
+        </h2>
+      </div>
+    </div>
+    <!-- JS -->
     <script src="js/script.js"></script>
   </body>
 </html>
